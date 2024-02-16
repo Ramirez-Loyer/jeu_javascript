@@ -1,5 +1,5 @@
-var person = document.querySelector(".perso");
-var obstacles = document.querySelector(".obstacles");
+let person = document.querySelector(".perso");
+let obstacles = document.querySelector(".obstacles");
 
 function sauter(){
     //function pour faire sauter le personnage
@@ -13,7 +13,7 @@ function sauter(){
 }
 
 //verifier si l'obstacle touche le personnage
-var verification = setInterval(function() {
+let verification = setInterval(function() {
     var persoTop = parseInt(window.getComputedStyle(person).getPropertyValue("top"));
     var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left"));
     

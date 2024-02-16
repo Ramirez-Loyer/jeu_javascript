@@ -18,6 +18,7 @@ section{
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 50px rgba(0,0,0,0.3);
+  
 }
 
 
@@ -28,6 +29,7 @@ section{
     overflow: hidden;
     border: 0;
     border-bottom: 3px solid #18f;
+    
 }
 
 
@@ -61,6 +63,24 @@ section{
 }
 
 
+/*Animation de couleurs*/
+@keyframes changement-couleur {
+    0% {
+        background-color:rgb(131, 129, 129);
+    }
+
+
+    50% {
+        background-color:black;
+    }
+ 
+    100% {
+        background-color:rgb(138, 136, 136);
+    }
+}
+
+
+
 .perso img{
     width: 100%;
     height: 100%;
@@ -72,10 +92,11 @@ section{
     height: 20px;
     background-color: #333;
     position: relative;
-    top: 100px;
+    top: 110px;
     left: 480px;
     border-radius: 50%;
-    animation: anime-obstacles 2.4s infinite;
+    animation: anime-obstacles 2.4s infinite, changement-couleur 0.5s infinite;;
+  
 }
 
 
